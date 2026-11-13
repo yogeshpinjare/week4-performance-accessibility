@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore beautiful travel destinations and discover your next adventure with Travel Explorer.">
+
+    <meta name="theme-color" content="#26745a">
+
+    <title>Travel Explorer | Discover the World</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a href="#home" class="logo" aria-label="Travel Explorer home">
+            Travel<span>Explorer.</span>
+        </a>
+
+        <button
+            class="menu-btn"
+            id="menu-btn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">YOUR NEXT ADVENTURE STARTS HERE</p>
+
+            <h1>Explore the World,
+                <span>Your Way.</span>
+            </h1>
+
+            <p>
+                Discover beautiful places, explore new cultures
+                and create unforgettable memories.
+            </p>
+
+            <a href="#destinations" class="btn">
+                Explore Destinations
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&q=75"
+                alt="Mountain landscape surrounding a peaceful lake"
+                width="900"
+                height="600"
+                fetchpriority="high">
+        </div>
+
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="destinations" id="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <p class="section-text">
+            Discover amazing places around the world.
+        </p>
+
+        <div class="destination-grid">
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=70"
+                    alt="Colorful Italian coastal village"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="card-content">
+                    <h3>Italian Coast</h3>
+                    <p>Explore beautiful coastal views.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=70"
+                    alt="Traditional Japanese architecture in Kyoto"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="card-content">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Experience culture and peace.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=70"
+                    alt="Beautiful tropical beach and clear blue water"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async">
+
+                <div class="card-content">
+                    <h3>Tropical Islands</h3>
+                    <p>Enjoy beautiful beaches.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <h2>Why Choose Travel Explorer?</h2>
+
+        <div class="about-grid">
+
+            <article>
+                <h3>Travel Ideas</h3>
+                <p>Discover interesting destinations and travel ideas.</p>
+            </article>
+
+            <article>
+                <h3>Easy Planning</h3>
+                <p>Plan your journey according to your preferences.</p>
+            </article>
+
+            <article>
+                <h3>Great Memories</h3>
+                <p>Explore new places and create unforgettable memories.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Have a question? Send us a message.</p>
+
+        <form id="contact-form">
+
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required>
+
+            <label for="email">Your Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required>
+
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <p id="form-message" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Travel Explorer. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
